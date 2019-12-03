@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="header">
+        <h1 id="title">YangChoi Survey Form</h1>
+        <h5 id="description">Thank you for taking the time to help us improve the platform</h5>
+    </div>    
+    <form id="survey-form">
+        <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required><br>
+        </div>
+        <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input type="text" name="email" id="email" class="form=control" placeholder="Enter your Email" required><br>
+        </div>
+        <div class="form-group">
+            <label id="age-label" for="number"></label>
+            <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age" required><br>
+        </div>
+        <div class="form-group">
+            <p>Which option best describes your current role?</p>
+            <select name="role" id="dropdown" class="form-control">                <option disabled selected value>Select current role</option>
+                <option value="student">Student</option>
+                <option value="programmer">programmer</option>
+                <option value="preferNo">Prefer not to say</option>
+                <option value="other">Other</option>
+            </select>
+
+        </div>
+        <div class="form-group">
+            <p>Would you recommend YangChoi to a friend?</p>
+            <label>
+                <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked>Definitely
+            </label>
+            <label>
+                <input name="user-recommend" value="maybe" type="radio" class="input-radio">Maybe
+            </label>
+            <label>
+                <input name="user-recommend" value="not-sure" type="radio" class="input-radio">Not sure
+            </label>
+        </div>
+        <div class="form-group">
+            <p>What is your favorite part of YangChoi?</p>   
+            <select name="mostLike" id="most-like" class="form-control" required>
+                <option disabled selected value>Select an option</option>
+                <option value="smile">Smile</option>
+                <option value="reaction">Reaction</option>
+                <option value="money">Money</option>
+                <option value="programming-skills">Programming Skills</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>What would you like to see improved?
+                <span class="clue">(Check all that apply)</span>
+            </p>
+            <label>
+                <input name="prefer" value="front-end-projects" type="checkbox">Front-end-Projects
+            </label>
+            <label>
+                <input name="prefer" value="back-end-projects" type="checkbox">Back-end-Projects
+            </label>
+            <label>
+                <input name="prefer" value="data-visualization" type="checkbox">Data Visualization
+            </label>
+            <label>
+                <input name="prefer" value="challenges" type="checkbox">Challenges
+            </label>
+            <label>
+                <input name="prefer" value="open=source-community" type="checkbox">Open Source Community
+            </label>
+            <label>
+                <input name="prefer" value="gitter-help-rooms
+                " type="checkbox">Challenges
+            </label>
+        </div>
+        <div class="form-group">
+            Any comments or suggestions?<br>
+            <input type="text"><br>
+        </div>    
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
