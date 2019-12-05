@@ -4,11 +4,102 @@
     <meta charset="UTF-8">
 
     <title>Survey Form</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+        * {
+            font-family: 'Roboto Condensed', sans-serif;
+            
+        }
+      
+        body {
+            background-image: url('./work.jpg');
+            display: block;
+      
+            color: white;
+      
+            
+        }
+      
+
+        .header {
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            
+        }
+        #survey-form {
+            background-color: rgba(64, 64, 64, 0.8);
+            margin: 0 auto;
+            width: 500px;
+            padding: 30px;
+            font-size: 25px;
+            border-radius: 10px;
+            line-height: 1.8em;
+            
+            
+        }
+        #title {
+            font-size: 45px;
+            font-weight: bold;
+        }
+        #description{
+            font-size: 21px;
+            font-weight: 500;
+            font-style: italic;
+        }
+     
+        .form-group {
+            padding-bottom: 5px;
+        }
+     
+        input[type = text], [type = number], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 23px;
+        }
+
+        input[type = checkbox] {
+            position: relative;
+            vertical-align: middle;
+            bottom: 1px;
+
+        }
+        input{
+            font-size: 23px;
+            color: black;
+
+        }
+
+        button[type=submit] {
+            width: 100%;
+            background-color: black;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 23px;
+        }
+
+        textarea {
+            width: 500px;
+            height: 150px;
+            font-size: 23px;
+        }
+    </style>
 </head>
 <body>
+  
     <div class="header">
         <h1 id="title">YangChoi Survey Form</h1>
-        <h5 id="description">Thank you for taking the time to help us improve the platform</h5>
+        <p id="description">Thank you for taking the time to help me improve the platform</p>
     </div>    
     <form id="survey-form">
         <div class="form-group">
@@ -20,12 +111,13 @@
             <input type="text" name="email" id="email" class="form=control" placeholder="Enter your Email" required><br>
         </div>
         <div class="form-group">
-            <label id="age-label" for="number"></label>
+            <label id="age-label" for="number">Age(Optional)</label>
             <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age" required><br>
         </div>
         <div class="form-group">
             <p>Which option best describes your current role?</p>
-            <select name="role" id="dropdown" class="form-control">                <option disabled selected value>Select current role</option>
+            <select name="role" id="dropdown" class="form-control">                
+                <option disabled selected value>Select current role</option>
                 <option value="student">Student</option>
                 <option value="programmer">programmer</option>
                 <option value="preferNo">Prefer not to say</option>
@@ -34,13 +126,13 @@
 
         </div>
         <div class="form-group">
-            <p>Would you recommend YangChoi to a friend?</p>
+            <p>Would you recommend YangChoi to your friends?</p>
             <label>
                 <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked>Definitely
-            </label>
+            </label><br>
             <label>
                 <input name="user-recommend" value="maybe" type="radio" class="input-radio">Maybe
-            </label>
+            </label><br>
             <label>
                 <input name="user-recommend" value="not-sure" type="radio" class="input-radio">Not sure
             </label>
@@ -61,30 +153,32 @@
             </p>
             <label>
                 <input name="prefer" value="front-end-projects" type="checkbox">Front-end-Projects
-            </label>
+            </label><br>
             <label>
                 <input name="prefer" value="back-end-projects" type="checkbox">Back-end-Projects
-            </label>
+            </label><br>
             <label>
                 <input name="prefer" value="data-visualization" type="checkbox">Data Visualization
-            </label>
+            </label><br>
             <label>
                 <input name="prefer" value="challenges" type="checkbox">Challenges
-            </label>
+            </label><br>
             <label>
                 <input name="prefer" value="open=source-community" type="checkbox">Open Source Community
-            </label>
+            </label><br>
             <label>
                 <input name="prefer" value="gitter-help-rooms
                 " type="checkbox">Challenges
-            </label>
+            </label><br>
         </div>
         <div class="form-group">
-            Any comments or suggestions?<br>
-            <input type="text"><br>
+            <p>Any comments or suggestions?</p>
+            <textarea name="comment" id="comments" class="input-textarea" placeholder="Enter your comment here"></textarea>
         </div>    
 
-        <input type="submit" value="Submit">
+        <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">Submit</button>
+        </div>
     </form>
 
 </body>
