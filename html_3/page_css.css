@@ -132,7 +132,7 @@ nav > ul {
     justify-content: center;
     text-align: center;
     height: 200px;
-    margin-top: 50px;
+    margin-top: 170px;
 }
 
 #hero > h2 {
@@ -150,7 +150,8 @@ nav > ul {
     max-width: 150px;
     width: 100%;
     height: 30px;
-    margin: 15px 0;
+    margin: 17px 0;
+    padding-left: 15px;
     border: 0;
     background-color: #f1c40f;
 }
@@ -167,7 +168,8 @@ nav > ul {
 }
 
 #features {
-    margin-top: 30px;
+    margin-top: 50px;
+    margin-bottom: 180px;
 }
 
 #features .icon {
@@ -183,6 +185,11 @@ nav > ul {
     #feature .icon {
         display: none;
     }
+}
+
+#icon-img {
+    height: 50%;
+    padding-right: 3px;
 }
 
 #features .desc {
@@ -210,12 +217,14 @@ nav > ul {
 }
 
 #how-it-works {
-    margin-top: 50px;
+    margin-top: 200px;
+    margin-bottom: 300px;
     display: flex;
     justify-content: center;
+
 }
 
-#how-it-works > ifrmae {
+#how-it-works > iframe {
     max-width: 560px;
     width: 100%;
 }
