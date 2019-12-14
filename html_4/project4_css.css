@@ -11,27 +11,24 @@ html, body {
     font-size: 30px;
     color: black;
     font-weight: 400;
-    margin: 30px;
-    
+    margin-left: 10px;
+    padding: 20px;
+  
 }
+
 
 #navbar{
     display: block;
     position: fixed;
-    
-    overflow-y: auto;
-    
-    
+
 }
 
 #navbar li a {
-    
     font-size: 18px;
     font-weight:400;
     display: block;
     background-color: white;
     color: #4d4e53;
-    display: block;
     margin: 8px 10px;
     padding: 5px 20px;
     text-decoration: none;
@@ -43,16 +40,16 @@ html, body {
 
 #navbar ul {
     border: 1px solid #4d4e53;
-
     border-left: none;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 25%;
-    height: 100%;
+    width: 16%;
+    height: 800px;
     position: fixed;
     overflow: auto;
-    margin-top: 18px;
+    margin-top: 10px;
+    
 }
 
 #navbar li {  
@@ -67,7 +64,7 @@ html, body {
 
 /*Main section*/
 #main-doc {
-    margin-left: 25%;
+    margin-left: 16%;
     padding: 2px 36px;
     height: auto;
     border-left: 2px solid #4d4e53;
@@ -91,6 +88,67 @@ article {
 
 
 code {
-    background:#d9d9d9;
-    padding: 13px;
+    display: block;
+    text-align: left;
+    white-space: pre;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/*Mobile version*/
+@media only screen and (max-width: 816px){
+    
+    #navbar header {
+        
+    }
+    
+    #navbar ul {
+        border: 1px solid;
+        height: 207px;
+        width: 476px;
+        position: relative;
+        
+    }
+
+  
+
+    #navbar {
+        position: relative;
+        background-color: white;
+        position: absolute;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-height: 275px;
+        border: none;
+        z-index: 1;
+        border-bottom: 2px solid;
+    }
+
+    #main-doc {
+        position: relative;
+        margin-left: 0px;
+        margin-top: 270px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    #main-doc{
+        margin-left: -10px;
+    }
+
+    code {
+        margin-left: -20px;
+        width: 100%;
+        padding: 15px;
+        padding-left: 10px;
+        padding-right: 45px;
+        min-width: 233px;
+    }
 }
