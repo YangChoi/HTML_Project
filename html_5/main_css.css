@@ -75,13 +75,13 @@ html, body {
     background-image: url('./mypic.jpg');
     background-position: center;
     text-align: center;
-    height: 86%;
-    width: 1700px;
-    margin: 50px;
+    height: 100%;
+    width: 100%;
+  
     background-size: cover;
     position: cover;
     color: white;
-    font-size: 40px;
+    font-size: 46px;
 }
 
 .welcome-section-title {
