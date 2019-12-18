@@ -1,12 +1,24 @@
 * {
     margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+  
+    
+}
+::-webkit-scrollbar {
+    width: 10px;
 }
 
-html {
-    box-sizing: border-box;
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
 }
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
 
 body{
     font-size: 1.8rem; /* 18px */
@@ -17,23 +29,36 @@ body{
 
 html, body {
     height: 100%;
-    overflow: hidden;
+    margin: 0;
 }
 
 /*NAV*/
 .navbar {
-    overflow: hidden;
-    background-color: #662e9e;
+    position: relative;
+    border-bottom: 2px solid #cccccc;
     height: 68px;
 }
 
 .nav-list {
-    line-height: 10px;
+    margin-top: 3px;
 }
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    border: 0;
+    float: right;
+}
+
 .navbar a{
     position: relative;
-    float: right;
-    color: #f2f2f2;
+    color: #555;
     text-align: center;
     padding: 5px 10px;
     text-decoration: none;
@@ -46,18 +71,38 @@ html, body {
     color: black;
 }
 /*WELCOME SECTION*/
-#welcome-section {
+.welcome-section {
+    background-image: url('./mypic.jpg');
+    background-position: center;
     text-align: center;
+    height: 86%;
+    width: 1700px;
+    margin: 50px;
+    background-size: cover;
+    position: cover;
+    color: white;
+    font-size: 40px;
+}
+
+.welcome-section-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
 }
 
 /*PROJECTS*/
 #projects {
     text-align: center;
+    height: 100%;
 }
 
 /*ONTACT SECTION*/
 #contact-section {
     text-align: center;
+    height: 100%;
 }
 
 /*FOOTER*/
