@@ -1,8 +1,8 @@
 * {
-    margin: 0;
-  
-    
+    margin: 0; 
 }
+
+/*SCROLL BAR*/
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -12,11 +12,11 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #888;
+    background: #ccc;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: black;
 }
 
 
@@ -34,35 +34,31 @@ html, body {
 
 /*NAV*/
 .navbar {
-    position: relative;
-    border-bottom: 2px solid #cccccc;
-    height: 68px;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    border-bottom: 2px solid white;
+    height: 66px;
 }
 
 .nav-list {
-    margin-top: 3px;
+    display: flex;
+    list-style-type: none;
+    margin-right: 2rem;
+
 }
 
-.navbar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar li {
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
-    border: 0;
-    float: right;
-}
 
 .navbar a{
-    position: relative;
-    color: #555;
-    text-align: center;
-    padding: 5px 10px;
+    display: block;
+    font-size: 1.8rem;
+    color: black;
+    padding: 0.87rem;
     text-decoration: none;
-    font-size: 27px;
     
 }
 
@@ -70,14 +66,14 @@ html, body {
     background-color: #bfbfbf;
     color: black;
 }
+
 /*WELCOME SECTION*/
 .welcome-section {
-    background-image: url('./mypic.jpg');
+    background-image: url('./mypic.png');
     background-position: center;
     text-align: center;
     height: 100%;
     width: 100%;
-  
     background-size: cover;
     position: cover;
     color: white;
@@ -94,18 +90,42 @@ html, body {
 }
 
 /*PROJECTS*/
-#projects {
+.project-section {
     text-align: center;
     height: 100%;
+    width: 100%;
+
 }
 
+.project-section-header {
+    margin-top: 47px;
+    font-size: 3.6rem;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
 /*ONTACT SECTION*/
-#contact-section {
+.contact-section {
     text-align: center;
     height: 100%;
+    width: 100%;
 }
 
 /*FOOTER*/
 #footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    color: white;
     text-align: right;
+}
+
+#footer p {
+    font-size: 26px;
+    margin-right: 10px;
 }
