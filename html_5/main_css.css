@@ -1,5 +1,7 @@
 * {
     margin: 0; 
+    text-decoration: none;
+    color: black;
 }
 
 /*SCROLL BAR*/
@@ -92,11 +94,16 @@ html, body {
 
 }
 
+.welcome-section  {
+    
+}
+
 /*PROJECTS*/
 .project-section {
     text-align: center;
     height: 100%;
     width: 100%;
+    
 
 }
 
@@ -124,22 +131,64 @@ html, body {
 
 .project-title {
     text-decoration: none;
-    text-align: inherit;
     padding: 3px;
     font-size: 23px;
 }
-.project img {
+.project-image {
     width: 220px;
+    padding: 3px;
 }
 .code {
+    text-align: center;
     color: var(--main-gray);
     transition: color 0.3s ease-out;
+    position: relative;
+  
+    
 }
-/*ONTACT SECTION*/
+.project:hover .code {
+    color: #ccc;
+}
+/*CONTACT SECTION*/
 .contact-section {
     text-align: center;
     height: 100%;
     width: 100%;
+    margin-top: 20px;
+}
+.contact-section h4 {
+    font-style: italic;
+}
+.contact-link {
+    display: inline-block;
+    margin-top: 350px;
+    margin-left: 97px;
+    padding: 30px;
+    
+}
+.contact-link a {
+    margin-right: 30px;
+    color: black;
+}
+.contact-link img {
+    padding-right: 8px;
+}
+
+#github img {
+    width: 2.6%;
+}
+#blog img {
+    width: 2.3%;
+}
+#twitter img {
+    width: 3.2%;
+    padding-top: 6px;
+}
+#facebook img {
+    width: 3%;
+}
+#email img {
+    width: 3%;
 }
 
 /*FOOTER*/
