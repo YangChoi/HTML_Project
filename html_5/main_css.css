@@ -94,9 +94,7 @@ html, body {
 
 }
 
-.welcome-section  {
-    
-}
+
 
 /*PROJECTS*/
 .project-section {
@@ -110,7 +108,7 @@ html, body {
 .project-section-header {
     margin-top: 47px;
     font-size: 3.6rem;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 .project-grid {
@@ -131,18 +129,20 @@ html, body {
 
 .project-title {
     text-decoration: none;
-    padding: 3px;
+    padding-bottom: 10px;
     font-size: 23px;
+
 }
 .project-image {
     width: 220px;
     padding: 3px;
+    text-align: center;
 }
 .code {
-    text-align: center;
+    
     color: var(--main-gray);
     transition: color 0.3s ease-out;
-    position: relative;
+
   
     
 }
@@ -176,12 +176,15 @@ html, body {
 
 #github img {
     width: 2.6%;
+    padding-bottom:5px; 
 }
 #blog img {
     width: 2.3%;
+    padding-bottom: 5px;
+    margin-right: 4px;
 }
 #twitter img {
-    width: 3.2%;
+    width: 3.1%;
     padding-top: 6px;
 }
 #facebook img {
@@ -189,6 +192,7 @@ html, body {
 }
 #email img {
     width: 3%;
+    padding-top: 16px;
 }
 
 /*FOOTER*/
