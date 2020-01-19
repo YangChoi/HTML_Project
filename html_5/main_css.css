@@ -1,7 +1,7 @@
 * {
     margin: 0; 
     text-decoration: none;
-    color: black;
+
 }
 
 /*SCROLL BAR*/
@@ -42,10 +42,9 @@ html, body {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 10;
-    border-bottom: 2px solid white;
-    height: 66px;
-    
+    height: 50px;
+
+
     
 }
 
@@ -61,28 +60,34 @@ html, body {
     display: block;
     font-size: 1.8rem;
     color: black;
-    padding: 0.87rem;
+    padding: 0.5rem;
+    padding-top: 0.82rem;
     text-decoration: none;
     font-weight: 600;
+
     
 }
 
 .navbar a:hover {
-    background-color: white;
+    background-color: #e7e7e7;
     color: black;
+    transition-duration: 0.5s;
+    
 }
 
 /*WELCOME SECTION*/
 .welcome-section {
     background-image: url('./mypic.png');
     background-position: center;
+    margin-top: 63px;
     text-align: center;
-    height: 100%;
+    height: 900px;
     width: 100%;
     background-size: cover;
     position: cover;
     color: white;
     font-size: 46px;
+  
 }
 
 .welcome-section-title {
@@ -114,7 +119,7 @@ html, body {
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 4rem;
+    grid-gap: 3rem;
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
@@ -134,27 +139,26 @@ html, body {
 
 }
 .project-image {
-    width: 220px;
+    width: 200px;
     padding: 3px;
     text-align: center;
 }
 .code {
-    
     color: var(--main-gray);
     transition: color 0.3s ease-out;
-
-  
     
 }
 .project:hover .code {
     color: #ccc;
 }
+
+
 /*CONTACT SECTION*/
 .contact-section {
     text-align: center;
     height: 100%;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 .contact-section h4 {
     font-style: italic;
@@ -175,23 +179,23 @@ html, body {
 }
 
 #github img {
-    width: 2.6%;
+    width: 43px;
     padding-bottom:5px; 
 }
 #blog img {
-    width: 2.3%;
+    width: 39px;
     padding-bottom: 5px;
     margin-right: 4px;
 }
 #twitter img {
-    width: 3.1%;
+    width: 45px;
     padding-top: 6px;
 }
 #facebook img {
-    width: 3%;
+    width: 45px;
 }
 #email img {
-    width: 3%;
+    width: 45px;
     padding-top: 16px;
 }
 
@@ -211,3 +215,72 @@ html, body {
     font-size: 26px;
     margin-right: 10px;
 }
+
+/*media queries*/
+@media(max-width: 994px){
+    .welcome-section-title {
+        font-size: 2rem;
+    }
+    .navbar{
+        position: fixed;
+
+    }
+    .navbar a {
+        font-size: 1rem;
+        text-align: center;
+    }
+    .project-section-header {
+        font-size: 1.6rem;
+        padding-top: 50px;
+    }
+    .project-grid {
+        grid-template-columns: repeat(auto-fit, min-max(320px, 1fr));
+        height: 100%;
+        
+    
+    }
+    .project-grid a {
+        padding-bottom: 30px;
+    }
+
+    .contact-section {
+        margin-top: 990px;
+        font-size: 1.6rem;
+        height: 100%;
+        text-align: center;
+    }
+    .contact-section-header {
+        font-size: 1.6rem;
+        padding-top: 40px;
+       
+    }
+    .contact-link {
+        margin-top: 30px;
+        margin-left: 33px;
+    }
+
+    .contact-link a {
+        display: grid;
+        padding-top: 30px;
+        
+    }
+
+    #footer {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 35px;
+        background-color: black;
+        color: white;
+        text-align: right;
+        
+    }
+    #footer p {
+        font-size: 26px;
+        margin-right: 10px;
+    }
+
+}
+  
+
